@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="shortcut icon" href="./img/img-ico/Cv.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./css/reset.css">
+  <!-- <link rel="stylesheet" href="./css/normalize.css"> -->
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="./css/responsive-portfolio/responsive-web.css">
+  <title>Porfolio | Web Developer</title>
+</head>
+
+<body>
+
+  <!-- NAVEGACIÓN -->
+
+  <section class="container">
+    <nav class="container__menu">
+      <ul class="container__menu-unOrderList">
+        <li class="container__menu-items" onclick="despliegaMenu();"><a href="#banner"
+            class="container__menu-link">Home</a></li>
+        <li class="container__menu-items" onclick="despliegaMenu();"><a href="#acerca"
+            class="container__menu-link">Acerca de mi</a></li>
+        <li class="container__menu-items" onclick="despliegaMenu();"><a href="#skills"
+            class="container__menu-link">Skills</a></li>
+        <li class="container__menu-items" onclick="despliegaMenu();"><a href="#formacion"
+            class="container__menu-link">Formación A.</a></li>
+        <li class="container__menu-items" onclick="despliegaMenu();"><a href="#proyectos"
+            class="container__menu-link">Proyectos</a></li>
+        <li class="container__menu-items" onclick="despliegaMenu();"><a href="#hobbies"
+            class="container__menu-link">Hobbies</a></li>
+        <li class="container__menu-items" onclick="despliegaMenu();"><a href="#contacto"
+            class="container__menu-link">Contacto</a></li>
+      </ul>
+      <div class="cambio__tema"></div>
+    </nav>
+    <div class="main">
+      <div class="main__topBar">
+        <div class="main__topBar-logo">
+          <img class="main__topBar-imgLogo" src="./img/img-varias/Personal-Logo-1.png" alt="">
+        </div>
+        <div class="main__topBar-toggle" id="main__topBar-toggle"></div>
+      </div>
+
+      <!-- BANNER -->
+
+      <section class="banner" id="banner">
+        <div class="banner__contenido">
+          <div class="banner__container-img">
+            <img class="banner__imagen" src="./img/img-perfil/Me.jpeg" alt="Foto de Perfil"
+              title="Foto Christian Aguilera">
+          </div>
+          <h3 class="banner__nombre">Christian Aguilera</h3>
+          <p class="banner__descripcion">Soy desarrollador Front End</p>
+          <a href="./Cv/portfolio.html" class="banner__descargarCv" target="_blank">Descargar CV</a>
+          <ul class="banner__socialMedia">
+            <li class="banner__items"><a href="#" class="banner__links"><i class="fa-brands fa-facebook"></i></a></li>
+            <li class="banner__items"><a href="#" class="banner__links"><i class="fa-brands fa-instagram"></i></a></li>
+            <li class="banner__items"><a href="#" class="banner__links"><i class="fa-brands fa-github"></i></a></li>
+            <li class="banner__items"><a href="#" class="banner__links"><i class="fa-brands fa-linkedin"></i></a></li>
+          </ul>
+        </div>
+      </section>
+      <a href="#" class="btn__subir"></a>
+
+      <!-- ACERCA DE MI -->
+
+      <section class="acerca ajustar" id="acerca">
+        <div class="acerca__titulo">
+          <h2 class="acerca__nombreTitulo">Acerca de mi</h2>
+        </div>
+        <div class="acerca__contenido">
+          <div class="acerca__descripcion">
+            <h4 class="acerca__hola">Hola, <span class="acerca__descripcion-parrafo">mi nombre es</span></h4>
+            <h2 class="acerca__miNombre">Christian Aguilera.</h2>
+            <p class="acerca__descripcion-parrafo">Soy formado en análisis y diseño de sistemas ya hace un par de años y
+              aunque en el transcurso de esos años solo he trabajado en otras áreas no tecnológicas pero también
+              tecnológica como por ejemplo el mantenimiento de equipos informáticos e instalación de servidores y
+              mantenimiento de los mismos, no he ejercido en el ámbito tecnológico específicamente el desarrollo web.
+            </p>
+            <p class="acerca__descripcion-parrafo">
+              A meses de haber iniciado la pandemia decidí comenzar de manera autodidacta a aprender estas tecnologías
+              viendo el potencial que tiene actualmente y para el futuro próximo, comenzar de esta manera en ocasiones
+              tiene sus desventajas.
+            </p>
+            <p class="acerca__descripcion-parrafo">Debido a que paso horas frente al computador leyendo y buscando
+              información en internet para practicar, di con el programa de enseñanza gratuita online de
+              <span class="acerca__oracle">ONE Oracle Next Education</span> impartido por <span
+                class="acerca__alura-latam">Alura
+                Latam</span>, viendo esta oportunidad decidí tomarla como complemento al
+              aprendizaje autodidacta que he llevado, de tal manera que de la mano de mentores que ya poseen experiencia
+              suficiente en este mundo del desarrollo web tener esa ayuda que muchos necesitamos al momento de iniciar y
+              no solo de los mentores o
+              personas especializadas también de la comunidad creada dentro del programa donde se intercambian ideas
+              para resolver muchas de las
+              dudas que se presentan al momento de codear, porque es que la programación es maravillosa, me gusta mucho
+              pero nadie dijo que era solo soplar y hacer botella 🤯 es un mundo muy extenso pero absolutamente
+              apasionante para quien le gusta la tecnología 👀 <strong>Punto muy importante.❗❗❗</strong>
+            </p>
+            <p class="acerca__descripcion-parrafo">
+              Estoy siempre abierto al aprendizaje y a aprender de los que ya poseen un amplio conocimiento de la
+              materia y obviamente que estén dispuestos a compartir sus conocimientos con quienes estamos iniciando en
+              este extenso mundo de la
+              programación. He hecho varios cursos y Actualmente estoy cursando la formación de Frontend Web
+              Development del programa One Oracle Next Educación. Y vamos por más. 💪🏽😎
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- SKILLS -->
+
+      <section class="skills ajustar" id="skills">
+        <div class="skills__titulo">
+          <h2 class="skills__nombreTitulo">Skills</h2>
+          <p class="skills__descripcionImg">
+            Algunas habilidades obtenidas en el desarrollo web y que día a día continúo aprendiendo.
+          </p>
+        </div>
+        <div class="skills__contenido">
+          <div class="skills__contenidoImg">
+            <img src="./img/img-skills/Illustrator.png" alt="Illustrator" class="skills__img">
+            <h2 class="skills__nombreImg">Adobe Illustrator</h2>
+          </div>
+          <div class="skills__contenidoImg">
+            <img src="./img/img-skills/PhotoShop.png" alt="PhotoShop" class="skills__img">
+            <h2 class="skills__nombreImg">Adobe PhotoShop</h2>
+          </div>
+          <div class="skills__contenidoImg">
+            <img src="./img/img-skills/css3-3d.png" alt="CSS3" class="skills__img">
+            <h2 class="skills__nombreImg">css3</h2>
+          </div>
+          <div class="skills__contenidoImg">
+            <img src="./img/img-skills/Figma-3d.png" alt="Figma" class="skills__img">
+            <h2 class="skills__nombreImg">Figma</h2>
+          </div>
+          <div class="skills__contenidoImg">
+            <img src="./img/img-skills/git.png" alt="Git" class="skills__img">
+            <h2 class="skills__nombreImg">git</h2>
+          </div>
+          <div class="skills__contenidoImg">
+            <img src="./img/img-skills/html-3d.png" alt="Html5" class="skills__img">
+            <h2 class="skills__nombreImg">html5</h2>
+          </div>
+          <div class="skills__contenidoImg">
+            <img src="./img/img-skills/js.png" alt="Javascript" class="skills__img">
+            <h2 class="skills__nombreImg">Javascript</h2>
+          </div>
+          <div class="skills__contenidoImg">
+            <img src="./img/img-skills/Trello.png" alt="Trello" class="skills__img">
+            <h2 class="skills__nombreImg">Trello</h2>
+          </div>
+        </div>
+      </section>
+
+      <!-- FORMACIÓN -->
+
+      <section class="formacion ajustar" id="formacion">
+        <div class="formacion__titulo">
+          <h2 class="formacion__nombreTitulo">formación Académica</h2>
+          <p class="formacion__descripcion">
+            Un poco sobre mi experiencia educativa una mezcla de educación convencional y la nueva era de la educación
+            Online.
+          </p>
+        </div>
+        <div class="formacion__container">
+          <div class="formacion__container-contenido">
+            <div class="formacion__container-img">
+              <img src="./img/img-formacion/Logo-UNEFA.png" alt="Logo UNEFA" class="formacion__img">
+            </div>
+            <p class="formacion__parrafo">
+              Creada el 21 de noviembre de 1973 como Instituto Politécnico de las Fuerzas Armadas Nacionales
+              <strong><em>(IUPFAN)</em></strong> que luego de 25 años fructíferos de continua labor educativa fue
+              transformado en la Universidad Nacional Experimental Politécnica de la Fuerza Armada Nacional
+              <Strong><em>(UNEFA).</em></Strong>
+              <a href="http://www.unefa.edu.ve/portal/historia.php" target="_blank"
+                class="formacion__seguir-leyendo">Más >></a>
+            </p>
+            <h4 class="formacion__nombre-persona">T.S.U Análisis y diseño de sistemas<br>
+              <span class="formacion__cargo-persona">2007 | UNEFA</span>
+            </h4>
+          </div>
+          <div class="formacion__container-contenido">
+            <div class="formacion__container-img">
+              <img src="./img/img-formacion/Logo-Domestika.png" alt="Logo Domestika" class="formacion__img">
+            </div>
+            <p class="formacion__parrafo">
+              <strong><em>Domestika</em></strong> es la comunidad creativa con el crecimiento más rápido del sector,
+              donde los mejores expertos comparten sus
+              conocimientos y transmiten sus habilidades a través de cursos online producidos profesionalmente.
+              Todo empezó en un pequeño foro online.
+              <a href="https://www.domestika.org/es/about" target="_blank" class="formacion__seguir-leyendo">Más >></a>
+            </p>
+            <h4 class="formacion__nombre-persona">Introducción al Desarrollo Web Responsivo con HTML & CSS<br>
+              <span class="formacion__cargo-persona">2020 | Domestika</span>
+            </h4>
+          </div>
+          <div class="formacion__container-contenido">
+            <div class="formacion__container-img">
+              <img src="./img/img-formacion/Logo-Platzi.png" alt="Logo Platzi" class="formacion__img">
+            </div>
+            <p class="formacion__parrafo">
+              <strong><em>Platzi</em></strong> fue fundada en Colombia por Freddy Vega y Christian Van Der Henst en
+              2014.
+              La idea de la plataforma nació de una
+              transmisión en vivo que era presentada por los fundadores semanalmente.
+              Inicialmente, se llamaron <strong><em>"Mejorando.la"</em></strong> y luego
+              se modificó el nombre a <strong><em>"Platzi"</em></strong>.
+              <a href="https://www.negociosyemprendimiento.org/2020/05/historia-platzi.html" target="_blank"
+                class="formacion__seguir-leyendo">Más >></a>
+            </p>
+            <h4 class="formacion__nombre-persona">Programación Básica<br>
+              <span class="formacion__cargo-persona">2022 | Platzi</span>
+            </h4>
+          </div>
+          <div class="formacion__container-contenido">
+            <div class="formacion__container-img">
+              <img src="./img/img-formacion/Logo-One-Oracle.png" alt="Logo ONE Oracle" class="formacion__img">
+            </div>
+            <p class="formacion__parrafo">
+              <strong><em>ONE</em></strong> es un programa de educación y empleabilidad
+              con el objetivo social de formar personas en tecnología y conectarlas
+              con el mercado laboral a través de empresas colaboradoras.
+              El programa equipa a los estudiantes con habilidades técnicas y conductuales.
+              <a href="https://www.oracle.com/cl/education/oracle-next-education/" target
+                class="formacion__seguir-leyendo">Más >></a>
+            </p>
+            <h4 class="formacion__nombre-persona">Formación Front End F2G2 - ONE<br>
+              <span class="formacion__cargo-persona">2022 Actualmente Cursando | ONE Oracle Next Education - Alura
+                LATAM</span>
+            </h4>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROYECTOS -->
+
+      <section class="proyectos ajustar" id="proyectos">
+        <div class="proyectos__titulo">
+          <h2 class="proyectos__nombreTitulo">Proyectos</h2>
+          <p class="proyectos__descripcion">
+            Algunos de los proyectos realizados con los conocimientos adquiridos.
+          </p>
+        </div>
+        <div class="proyectos__container">
+          <div class="proyectos__container-imgText">
+            <div class="proyectos__container-img">
+              <img src="./img/img-proyectos/Encriptador/Encriptador.png" alt="Encriptador de Texto"
+                class="proyectos__img">
+            </div>
+            <div class="proyectos__container-texto">
+              <h3 class="proyectos__nombre-proyecto">Encriptador De Texto</h3>
+              <h4 class="proyectos__descripcion-proyecto">Challenge Oracle</h4>
+              <p class="proyectos__lenguajes">
+                Creado con los lenguajes <span class="html">Html5</span>, <span class="css">CSS3</span> & <spa
+                  class="js">Javascript</spa>.
+              </p>
+              <div class="proyectos__btns">
+                <a href="https://github.com/Chrlord" target="_blank" class="proyectos__btns-repo">Repositorio</a>
+                <a href="https://chrlord.github.io/Challenge-One-Encriptador/" target="_blank"
+                  class="proyectos__btns-demo">Ver Demo</a>
+              </div>
+            </div>
+          </div>
+          <div class="proyectos__container-imgText">
+            <div class="proyectos__container-img">
+              <img src="./img/img-proyectos/Juego-Ahorcado/Ahorcado-Play.png" alt="Juego Ahorcado"
+                class="proyectos__img">
+            </div>
+            <div class="proyectos__container-texto">
+              <h3 class="proyectos__nombre-proyecto">Hanged Game</h3>
+              <h4 class="proyectos__descripcion-proyecto">Challenge Oracle</h4>
+              <p class="proyectos__lenguajes">
+                Creado con los lenguajes <span class="html">Html5</span>, <span class="css">CSS3</span> & <span
+                  class="js">Javascript</span>.
+              </p>
+              <div class="proyectos__btns">
+                <a href="https://github.com/Chrlord" target="_blank" class="proyectos__btns-repo">Repositorio</a>
+                <a href="#" target="_blank" class="proyectos__btns-demo">Ver Demo</a>
+              </div>
+            </div>
+          </div>
+          <div class="proyectos__container-imgText">
+            <div class="proyectos__container-img">
+              <img src="./img/img-proyectos/Coming-Soon.png" alt="E-Comerce" class="proyectos__img">
+            </div>
+            <div class="proyectos__container-texto">
+              <h3 class="proyectos__nombre-proyecto">E-comerce</h3>
+              <h4 class="proyectos__descripcion-proyecto">Challenge Oracle En desarrollo</h4>
+              <p class="proyectos__lenguajes">
+                Creado con los lenguajes <span class="html">Html5</span>, <span class="css">CSS3</span> & <span
+                  class="js">Javascript</span>.
+              </p>
+              <div class="proyectos__btns">
+                <a href="https://github.com/Chrlord" target="_blank" class="proyectos__btns-repo">Repositorio</a>
+                <a href="#" target="_blank" class="proyectos__btns-demo">Ver Demo</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- HOBBIES -->
+
+      <section class="hobbies ajustar" id="hobbies">
+        <div class="hobbies__titulo">
+          <h2 class="hobbies__nombreTitulo">Hobbies</h2>
+          <p class="hobbies__descripcion">
+            Bueno y además de lo anterior también como todo persona tengo mis pasatiempos,
+            acá menciono algunos de ellos.
+          </p>
+        </div>
+        <div class="hobbies__container">
+          <div class="hobbies__container-contenido">
+            <div class="hobbies__container-img">
+              <img src="./img/img-hobbies/Ajedrez.png" alt="Tablero de Ajedrez" class="hobbies__img">
+            </div>
+            <h4 class="hobbies__nombre-hobby">Ajedrez<br>
+              <p class="hobbies__descripcion-hobby">
+                En algún momento le dedique bastante tiempo a aprender este juego de estrategias.
+                No lo juego como antes pero igual me sigue gustando.
+              </p>
+            </h4>
+          </div>
+          <div class="hobbies__container-contenido">
+            <div class="hobbies__container-img">
+              <img src="./img/img-hobbies/Apreder-Tecnologia.png" alt="Tecnologia" class="hobbies__img">
+            </div>
+            <div class="hobbies__container-infoImg">
+              <h4 class="hobbies__nombre-hobby">Aprender Sobre Tecnología<br>
+                <p class="hobbies__descripcion-hobby">
+                  A dia de hoy es como el pan nuestro de cada día, hago lo posible por mantenerme
+                  informado y seguir aprendiendo.
+                </p>
+              </h4>
+            </div>
+          </div>
+          <div class="hobbies__container-contenido">
+            <div class="hobbies__container-img">
+              <img src="./img/img-hobbies/Capacitarce-01.png" alt="Capacitarce" class="hobbies__img">
+            </div>
+            <div class="hobbies__container-infoImg">
+              <h4 class="hobbies__nombre-hobby">Capacitaciones<br>
+                <p class="hobbies__descripcion-hobby">
+                  Frecuentemente aprovecho las oportunidades que se me presentan en la web,
+                  ya que existen muchos cursos de manera gratuita.
+                </p>
+              </h4>
+            </div>
+          </div>
+          <div class="hobbies__container-contenido">
+            <div class="hobbies__container-img">
+              <img src="./img/img-hobbies/Comer.png" alt="Pizza" class="hobbies__img">
+            </div>
+            <div class="hobbies__container-infoImg">
+              <h4 class="hobbies__nombre-hobby">Comer<br>
+                <p class="hobbies__descripcion-hobby">
+                  A quien no le gusta comer? Esto lo disfruto mucho. Y aun mas cuando tienes una
+                  amiga Cheff que te usa de comensal. &#128523;
+                </p>
+              </h4>
+            </div>
+          </div>
+          <div class="hobbies__container-contenido">
+            <div class="hobbies__container-img">
+              <img src="./img/img-hobbies/Leer.png" alt="Libros" class="hobbies__img">
+            </div>
+            <div class="hobbies__container-infoImg">
+              <h4 class="hobbies__nombre-hobby">Leer<br>
+                <p class="hobbies__descripcion-hobby">
+                  Lo que antes era aburrido, pues con el tiempo comprendí que es necesario, porque si quieres
+                  aprender algo pues debes leer.
+                </p>
+              </h4>
+            </div>
+          </div>
+          <div class="hobbies__container-contenido">
+            <div class="hobbies__container-img">
+              <img src="./img/img-hobbies/Trading.png" alt="Trading" class="hobbies__img">
+            </div>
+            <div class="hobbies__container-infoImg">
+              <h4 class="hobbies__nombre-hobby">Trading<br>
+                <p class="hobbies__descripcion-hobby">
+                  Un hobby que no debería de calificar como tal, ya que esto es una profesión para muchos.
+                  Lo hago ocasionalmente.</p>
+              </h4>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- CONTACTOS -->
+
+      <section class="contacto ajustar" id="contacto">
+        <div class="contacto__titulo">
+          <h2 class="contacto__nombreTitulo">Contacto</h2>
+          <p class="contacto__descripcion">
+            Si tienes alguna pregunta, por favor envíame un mensaje.
+          </p>
+        </div>
+        <form class="contacto__form" id="form" action="#">
+          <div class="contacto__form-fila">
+            <input type="text" class="contacto__input" id="contacto__nombre" placeholder="Nombre" name="nombre">
+            <input type="text" class="contacto__input" id="contacto__apellido" placeholder="Apellido" name="apellido">
+          </div>
+          <div class="contacto__form-fila">
+            <input type="email" class="contacto__input" id="contacto__email" placeholder="email@email.com" name="email">
+            <input type="tel" class="contacto__input" id="contacto__phone" placeholder="569 1245 5423" name="phone">
+          </div>
+          <div class="contacto__textarea">
+            <textarea class="contacto__textarea-msg" id="contacto__textArea" placeholder="Tu Mensaje"></textarea>
+          </div>
+          <div class="contacto__container-msgError">
+            <p id="contacto__msg-error" class="contacto__msg-error"><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellene el formulario correctamente.</p>
+          </div>
+          <div class="contacto__textarea">
+            <input class="contacto__textarea-btn" id="contacto__btn-enviar" type="submit" value="Enviar"></input>
+            <p id="contacto__msg-exito" class="contacto__msg-exito"><i class="fas fa-check-circle"></i> Formulario Enviado correctamente.</p>
+          </div>
+        </form>
+      </section>
+
+      <!-- FOOTER Y COPYRIGHT -->
+
+      <!-- <div class="footer__decoracion"></div> -->
+      <footer class="footer__copyright">
+        <p class="footer__copyright-texto">Desarrollado por Christian J. Aguilera.</p>
+      </footer>
+
+
+    </div>
+  </section>
+  <script src="./javascript/index.js"></script>
+</body>
+
+</html>
