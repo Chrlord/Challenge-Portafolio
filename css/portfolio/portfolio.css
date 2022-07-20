@@ -1,0 +1,350 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;500&family=Courgette&family=Dancing+Script&family=Lobster+Two&family=Montserrat+Alternates:ital,wght@0,100;0,300;1,100&family=Pacifico&family=Patrick+Hand&family=Splash&family=The+Nautigal&display=swap");
+
+/* =========================== 
+ = DECLARACIÓN DE VARIABLES = 
+============================ */
+
+:root {
+  --color-fondo: hsl(163, 100%, 83%);
+  --iconos: hsla(236, 100%, 50%, 0.672);
+  --fondo-LD: hsla(0, 0%, 100%, 0.771);
+  --fondo-LIzq: hsla(187, 100%, 50%, 0.426);
+  --texto-LIzq: hsl(0, 2%, 27%);
+  --parrafo-LD: hsl(240, 2%, 30%);
+  --titulo-LD: hsl(239, 100%, 50%);
+  --titulo2-LD: hsl(239, 79%, 54%);
+}
+
+* {
+  font-family: "Patrick Hand", cursive;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+body {
+  background: var(--color-fondo);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: -140px;
+  background: var(--titulo2-LD);
+  width: 100%;
+  height: 40%;
+  border-radius: 50%;
+}
+
+.volver__web {
+  position: absolute;
+  top: 1rem;
+  text-decoration: none;
+  color: var(--fondo-LD);
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
+
+.descargar-cv {
+  position: absolute;
+  top: 1rem;
+  right: 20rem;
+  text-decoration: none;
+  color: var(--fondo-LD);
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
+
+.volver__web:hover,
+.descargar-cv:hover {
+  opacity: 1;
+}
+
+.fa-circle-arrow-left {
+  margin-right: 0.2rem;
+  transition: 0.3s ease-in-out;
+}
+
+.volver__web:hover .fa-circle-arrow-left {
+  transform: translateX(-5px) rotate(360deg);
+}
+
+/* =========================== 
+ ==== TAMAÑO DE LA HOJA =====
+============================ */
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 62.5rem;
+  min-height: 62.5rem;
+  margin: 3.125rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  background: var(--color-fondo);
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  box-shadow: 0 2.5rem 3.8rem rgba(0, 0, 0, 0.1);
+}
+
+/* =========================== 
+LADO IZQUIERDO DEL PORTAFOLIO 
+============================ */
+
+.lado__izquierdo {
+  position: relative;
+  background: var(--fondo-LIzq);
+  padding: 2.5rem;
+}
+
+.lado__izquierdo-texto {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.lado__izquierdo-img {
+  position: relative;
+  width: 12.5rem;
+  height: 12.5rem;
+  border-radius: 50%;
+  overflow: hidden;
+  background: url(../../img/img-perfil/Me.jpeg) no-repeat center / cover;
+}
+
+.lado__izquierdo-titulo {
+  color: var(--texto-LIzq);
+  font-size: 1.5em;
+  margin-top: 1.25rem;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+  line-height: 1.4em;
+}
+
+.lado__izquierdo-span {
+  font-size: 0.8em;
+  font-weight: 300;
+}
+
+.info__contacto,
+.info__educacion,
+.info__idiomas {
+  padding-top: 2.3rem;
+}
+
+.info__contacto-titulo,
+.info__educacion-titulo,
+.info__idiomas-titulo {
+  color: var(--texto-LIzq);
+  text-transform: uppercase;
+  font: weight 600;
+  letter-spacing: 1px;
+  margin-bottom: 1.25rem;
+}
+
+.info__contacto-unOrderList,
+.info__educacion-unOrderList {
+  position: relative;
+}
+
+.info__contacto-items {
+  position: relative;
+  list-style: none;
+  margin: 0.625rem 0;
+  cursor: pointer;
+}
+
+.info__contacto-link {
+  color: var(--texto-LIzq);
+  text-decoration: none;
+}
+
+.info__contacto-icono {
+  width: 1.87rem;
+  font-size: 1.125rem;
+  color: var(--iconos);
+}
+
+.info__educacion-items,
+.info__idiomas-items {
+  margin-bottom: 0.93rem;
+  list-style: none;
+}
+
+.info__educacion-year {
+  color: var(--iconos);
+  font-weight: 700;
+  cursor: default;
+}
+
+.certificados {
+  list-style: none;
+}
+
+.info__educacion-titulacion::before {
+  font-family: "FontAwesome";
+  content: "\f00c";
+  margin-right: 0.5rem;
+}
+
+.info__educacion-titulacion {
+  color: var(--texto-LIzq);
+  font-weight: 700;
+}
+
+.info__educacion-instituto,
+.info__idiomas-idioma {
+  color: var(--texto-LIzq);
+  font-weight: 300;
+}
+
+.info__idiomas-percent {
+  position: relative;
+  width: 100%;
+  height: 0.5rem;
+  background: #08192180;
+  border-radius: 0.18rem;
+  overflow: hidden;
+  display: block;
+  margin-top: 0.31rem;
+}
+
+.info__idiomas-realPercent {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: var(--iconos);
+  border-radius: 0.18rem;
+}
+
+/* =========================
+LADO DERECHO DEL PORTAFOLIO 
+========================== */
+
+.lado__derecho {
+  background: var(--fondo-LD);
+  padding: 2.5rem;
+  position: relative;
+}
+
+.lado__derecho-sobreMi {
+  margin-bottom: 3.12rem;
+}
+
+.lado__derecho-sobreMi:last-child {
+  margin-bottom: 0;
+}
+
+.lado__derecho-titulo,
+.info__experiencia-titulo,
+.info__skills-titulo,
+.info__interes-titulo {
+  color: var(--titulo-LD);
+  letter-spacing: 1px;
+  margin-bottom: 1.25rem;
+  text-transform: uppercase;
+}
+
+.lado__derecho-descripcion {
+  color: var(--parrafo-LD);
+  line-height: 1.4rem;
+  text-align: left;
+  text-indent: 1.27cm;
+}
+
+.info__experiencia-container {
+  display: flex;
+  flex-direction: row;
+  margin: 0.39rem 0;
+}
+
+.info__experiencia-yearCompany {
+  min-width: 9.37rem;
+}
+
+.info__experiencia-year,
+.info__experiencia-company {
+  color: var(--parrafo-LD);
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.info__experiencia-nombreCargo {
+  color: var(--titulo2-LD);
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.info__experiencia-descripcionCargo {
+  color: var(--parrafo-LD);
+  line-height: 1.4rem;
+  text-align: left;
+  text-indent: 1.27cm;
+  margin-bottom: 1.25rem;
+}
+
+.info__skills-container {
+  position: relative;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 9.37rem 1fr;
+  justify-content: center;
+  align-items: center;
+}
+
+.info__skills-container:last-child {
+  margin-bottom: 1rem;
+}
+
+.info__skills-name {
+  color: var(--parrafo-LD);
+  font-weight: 500;
+  text-transform: uppercase;
+  margin: 0.7rem;
+}
+
+.info__skills-percent {
+  /* align-items: center; */
+  border-radius: 0.5rem;
+  background: var(--color-fondo);
+  height: 0.5rem;
+  position: relative;
+  width: 100%;
+}
+
+.info__skills-realPercent {
+  border-radius: 0.5rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: var(--iconos);
+}
+
+.info__interes-unOrderList {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.info__interes-items {
+  color: var(--parrafo-LD);
+  font-weight: 500;
+  list-style: none;
+  margin: 0.625rem 0;
+}
+
+.info__interes-icons {
+  color: var(--iconos);
+  font-size: 1.125rem;
+  margin-right: 0.7rem;
+  width: 1.25rem;
+}

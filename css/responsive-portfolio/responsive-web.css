@@ -1,0 +1,135 @@
+@media screen and (max-width: 79.68rem) {
+  section:nth-child(9)::before {
+    width: 15rem;
+    height: 15rem;
+    transform: translate(-8rem, 8rem) rotate(180deg);
+  }
+
+  section:nth-child(9)::after {
+    width: 12rem;
+    height: 12rem;
+    transform: translate(15rem, 22rem) rotate(180deg);
+  }
+}
+
+@media screen and (max-width: 62rem) {
+  .container__menu {
+    left: -100%;
+  }
+
+  .container__menu.active {
+    left: 0;
+    width: 100%;
+  }
+
+  .main {
+    left: 0;
+    width: 100%;
+  }
+
+  .main.active {
+    left: 100%;
+  }
+
+  .main__topBar {
+    width: 100%;
+    left: 0;
+    padding: 0 1.25rem;
+  }
+
+  .main__topBar-toggle::before {
+    transform: translateY(6px);
+  }
+
+  .main__topBar-toggle::after {
+    transform: translateY(-6px);
+  }
+
+  .main__topBar-toggle.active::before {
+    transform: translateY(0) rotate(-45deg);
+  }
+
+  .main__topBar-toggle.active::after {
+    transform: translateY(0) rotate(45deg);
+  }
+
+  .main__topBar-toggle::before,
+  .main__topBar-toggle::after {
+    width: 1.8rem;
+    height: 2.5px;
+  }
+
+  .container__menu-unOrderList {
+    padding: 1.25rem;
+  }
+
+  .banner__container-img {
+    width: 15.3rem;
+    height: 15.3rem;
+  }
+
+  .banner__nombre,
+  .banner__descripcion {
+    text-align: center;
+  }
+
+  .acerca__descripcion {
+    width: 100%;
+    min-width: 100%;
+    text-align: justify;
+  }
+
+  .acerca__nombreTitulo,
+  .skills__nombreTitulo,
+  .formacion__nombreTitulo,
+  .proyectos__nombreTitulo,
+  .hobbies__nombreTitulo,
+  .contacto__nombreTitulo {
+    margin-bottom: 1rem;
+  }
+
+  .acerca__detalle-descripcion::first-letter {
+    margin-left: 1em;
+  }
+
+  .skills__contenido,
+  .proyectos__container,
+  .hobbies__container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0.7rem;
+  }
+
+  .formacion__container {
+    grid-gap: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 48rem) {
+  .skills__contenido,
+  .formacion__container,
+  .proyectos__container,
+  .hobbies__container,
+  .contacto__form-fila {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 0.7rem;
+  }
+
+  .contacto__form {
+    margin: 1.25rem auto;
+  }
+
+  .btn__subir {
+    bottom: 1.5rem;
+    right: 0.5rem;
+  }
+
+  section:nth-child(9)::before {
+    width: 0;
+    height: 0;
+  }
+
+  section:nth-child(9)::after {
+    width: 0;
+    height: 0;
+  }
+}

@@ -1,0 +1,39 @@
+@media screen and (max-width: 62.5rem) {
+  .volver__web {
+    color: var(--iconos);
+    z-index: 1;
+  }
+  
+  .container {
+    margin: 0.625rem;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .info__interes-unOrderList {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 37.5rem) {
+  .volver__web {
+    color: var(--iconos);
+    z-index: 1;
+  }
+
+  .info__experiencia-container {
+    flex-direction: column;
+  }
+
+  .info__experiencia-year,
+  .info__experiencia-company {
+    margin-bottom: 0.312rem;
+  }
+
+  .info__interes-unOrderList {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .info__skills-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
